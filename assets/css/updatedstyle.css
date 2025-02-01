@@ -1,0 +1,157 @@
+.content {
+  max-height: 40px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin: 0px;
+}
+.content.expanded {
+  max-height: none;
+}
+.read-more {
+  border: none;
+  border-style: none;
+  color: #336799;
+  font-size: 13px;
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+
+  height: 14px;
+}
+#service-para {
+  max-height: 81px;
+  overflow: hidden;
+  text-align: justify;
+}
+.read-more-service {
+  display: inline-block;
+  float: right;
+  margin-top: 0px;
+  height: 10px;
+  font-size: 13px;
+}
+.read-more-about{
+    border: none;
+    border-style: none;
+    display: inline-block;
+  float: right;
+  margin-top: 0px;
+  height: 10px;
+  font-size: 13px;
+  background-color: white;
+  padding: 0px;
+  margin: 0px 10px 0 0;
+  color: #336799;
+}
+
+
+.service-blocks{
+    max-width: 320px;
+                margin-right: 14px;
+               
+                margin-left: 50px;
+}
+
+.thank-you-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f4f4f4;
+    font-family: "Open Sans";
+    margin-bottom: 50px;
+
+}
+#typewriter{
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #333;
+    width: 0;
+    animation: blink 0.5s step-end infinite alternate;
+    z-index: 100;
+}
+
+@keyframes blink{
+    from{border-color: transparent;}
+    to{border-color: #333;}
+}
+
+
+#head-sec{
+    text-align: center;
+}
+#head-sec h1{
+    margin: 0 auto;
+    font-size: 4rem;
+
+}
+.redirect-section{
+    
+    margin: 10px 138px 0 135px;
+    padding: 5px 39px;
+}
+
+.heading-font{
+    font-weight: bold;
+    font-size: 6rem;
+    color: #3b469e;
+}
+
+.redirect-section p{
+    line-height: 2;
+}
+.redirect-section h2{
+    /* text-decoration: underline; */
+    line-height: 1.3;
+}
+.redirect-section h4{
+    text-decoration: dotted;
+    font-weight: bold;
+}
+.redirect-section ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.redirect-section strong{
+    color: #3b469e;
+}
+
+.highlight{
+    background-color: #90a1cb;
+    transition: backgroud-color 0.5s ease;
+}
+
+.custom-brand{
+    display: flex;
+}
+.custom-brand p{
+    margin: 9px 0px 0px 7px;
+    font-weight: 900;
+    font-size: 20px;
+    color: #010066;
+}
+
+.scroll-up-btn{
+    background-color: #010066;
+}
+
+.copyright-p{
+    position: relative;
+    right: -857px;
+}
+
+.namenaddicon{
+    font-size: 17px;
+    margin: 5px 5px 5px 0px;
+}
+
+.gallery-item-descr p{
+
+}
+
+.loc-icn{
+    margin-left: 5px;
+}
