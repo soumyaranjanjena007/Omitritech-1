@@ -506,7 +506,9 @@ h6 {
 }
 .image-sized {
   width: 100%;
-  height: 40px;
+}
+#brand .image-sized {
+    height: 40px;
 }
 .well.shallow {
   border: 1px solid #eee;
@@ -645,7 +647,7 @@ header .navbar-default ul.navbar-nav {
         text-transform: capitalize;
         font-weight: 600;
         font-size: 13px;
-        color: #010066;
+        color: #ffffff;
         font-family: "Raleway";
         padding: 7px 10px;
         margin: 0px 10px;
