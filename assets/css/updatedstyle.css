@@ -21,7 +21,6 @@
 #service-para {
   max-height: 81px;
   overflow: hidden;
-  text-align: justify;
 }
 .read-more-service {
   display: inline-block;
@@ -154,4 +153,24 @@
 
 .loc-icn{
     margin-left: 5px;
+}
+
+.icon-checkmark2{
+    margin-left: -25px;
+}
+
+nav.navbar-default .logo-blue{
+    display: none;
+}
+
+nav.navbar-default .logo-white {
+    display: flex;
+}
+
+nav.navbar-default.scrolled .logo-white {
+    display: none;
+}
+
+nav.navbar-default.scrolled .logo-blue {
+    display: flex;
 }
