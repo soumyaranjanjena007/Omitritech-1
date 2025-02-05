@@ -115,7 +115,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" novalidate method="POST"  enctype="application/x-www-form-urlencoded">
                         <legend>GET IN TOUCH</legend>
                         <div id="success"></div> <!-- For success/fail messages -->
                         <div class="form-group">
@@ -147,7 +147,9 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="well transparent">
-                                <h4>Omirti Technology Pvt Ltd</h4>
+                                <h4  style="
+                                margin-left: 9px;
+                            ">Omirti Technology Pvt Ltd</h4>
                                 <b>ADDRESS</b>
                                 <p>612 DLF Cybercity<br>Bhubaneswar, Odisha 751024</p>
                                 
@@ -219,7 +221,8 @@
     <script src="assets/libs/bootstrap-validator/js/bootstrapValidator.min.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="assets/libs/jquery-gmap3/gmap3.min.js"></script>
-    <script src="assets/js/pages/contact.js"></script>
+    <!-- <script src="assets/js/pages/contact.js"></script> -->
+    <script src="assets\js\pages\mailservice.js"></script>
     <!-- Page Specific JS Libraries End -->
     </body>
 </html>

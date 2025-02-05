@@ -1,4 +1,5 @@
 <?php
+	var_dump($_POST);
 	error_reporting(0);
 	// check if fields passed are empty
 	if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']) || !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
@@ -17,7 +18,10 @@
 					  "Email: $email_address\n Message \n $message";
 	$headers = "From: ".$to."\n";
 	$headers .= "Reply-To: $email_address";	
-	mail($to,$email_subject,$email_body,$headers);
-	echo "1";
+	if(mail($to,$email_subject,$email_body,$headers)){
+		echo "1";
+	}else{
+		echo "0";
+	}
 	die();			
 ?>
