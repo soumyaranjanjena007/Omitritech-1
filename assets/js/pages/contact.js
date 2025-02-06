@@ -42,7 +42,7 @@ $(function() {
       }
     });
 
-    $('#contactForm').bootstrapValidator({
+    $('#contactForm').formValidation({
         container: 'tooltip',
         feedbackIcons: {
             valid: 'icon-checkmark2',
@@ -96,17 +96,18 @@ $(function() {
         var $form = $(e.target);
 
         $.post("contact.php", $form.serialize(), function(data){
+          console.log("Response", data);
             if(data == "1"){
                 // Success message
                 $('#success').html("<div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Your message has been sent. </strong></div>");
                 $('#contactForm').trigger("reset");
-            }else if(data == "0"){
-                // Fail message
-                $('#success').html("<div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Please fill in all required fields!</strong></div>");
-            }else{
+            }
+            else{
                 // Fail message
                 $('#success').html("<div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Sorry, there was an error while sending the mail...</strong></div>");
             }
+        }).fail(function(xhr, status,error){
+          console.error("Ajax error:", status,error);
         });
         return false;
     });
