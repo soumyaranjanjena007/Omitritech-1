@@ -32,7 +32,7 @@
 const script = document.createElement("script");
 script.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
 script.onload = () => {
-    emailjs.init("urBewfEV-R4_osJkT");  // Replace with your actual Public ID
+    emailjs.init("urBewfEV-R4_osJkT"/*publickey_id */);
 };
 document.body.appendChild(script);
 
@@ -45,13 +45,13 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         message: document.getElementById("message").value
     };
 
-    emailjs.send("service_8px7xu8", "template_ddtfypj", params)
+    emailjs.send("service_8px7xu8"/*service_id */, "template_ddtfypj"/*template_id */, params)
         .then(response => {
             alert("Email sent successfully!");
             document.getElementById("contactForm").reset();
-        })
-        .catch(error => {
+            
+        }).catch(error => {
             alert("Failed to send email.");
-        });
+        })
 });
 
