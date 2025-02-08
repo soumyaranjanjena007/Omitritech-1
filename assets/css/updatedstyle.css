@@ -196,3 +196,8 @@ nav.navbar-default.scrolled .logo-blue {
     object-fit: cover;
     vertical-align: middle;
 }
+
+.tech-icn{
+    padding-left: 18px;
+    line-height: 0.8;
+}
